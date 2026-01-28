@@ -588,7 +588,7 @@
         /* TABLET & SMALL LAPTOP (Max 960px) */
          @media (max-width: 1400px) {
             .corner-img {
-                display: none; /* Hide decorative corners on small screens */
+                max-width: 250px; /* Smaller size for tablets */
             }
         }     
               
@@ -637,7 +637,18 @@
             }
 
             .corner-img {
-                display: none; /* Hide decorative corners on small screens */
+                max-width: 180px; /* Smaller size for mobile */
+                opacity: 0.7; /* Slightly transparent to not interfere with content */
+            }
+            
+            .top-left-box {
+                top: 80px; /* Adjust position to avoid navbar */
+                left: -20px;
+            }
+            
+            .right-mid-box {
+                bottom: -40px;
+                right: -20px;
             }
 
             .hero {
@@ -686,7 +697,18 @@
             }
 
             .corner-img {
-                display: none; /* Hide decorative corners on small screens */
+                max-width: 120px; /* Even smaller for mobile phones */
+                opacity: 0.5; /* More transparent on small screens */
+            }
+            
+            .top-left-box {
+                top: 70px;
+                left: -30px;
+            }
+            
+            .right-mid-box {
+                bottom: -30px;
+                right: -30px;
             }
 
             .btn-register {
@@ -796,7 +818,11 @@
             <p class="subhead">Black Engineers Of Canada</p>
             <p class="date">14 August, 2026</p>
             
-            <button class="btn-register">Register Now</button>
+            <button class="btn-register">
+                <a href="https://www.eventbrite.ca/e/black-engineers-of-canada-national-conference-2026-build-and-bridge-tickets-1979887177846?aff=oddtdtcreator" style="color: inherit;">
+                    Register Now
+                </a>
+            </button>
             
             <div class="social-icons">
                 <a href="mailto:Events@Blackengineers.ca" aria-label="Email Events at Black Engineers of Canada">
@@ -813,7 +839,7 @@
     </section>
 
     <section id="about" class="about-section">
-        <div class="about-card reveal-on-scroll">
+        <div class="about-card">
             <div class="about-content">
                 <span class="small-tag">Black Engineers Of Canada</span>
                 <h2>About this<br>Conference</h2>
@@ -822,7 +848,11 @@
                 <div class="overview-header">Conference Overview</div>
                 
                 <p>The Black Engineers of Canada National Conference brings innovators, leaders, and aspiring engineers together from across the country.<br><br>Here, you will explore new opportunities, build networks, meet recruiters, and engage in insightful discussions around career growth, leadership, and representation in the engineering industry.</p>
-                <button class="btn-register">Register Now</button>
+                <button class="btn-register">
+                <a href="https://www.eventbrite.ca/e/black-engineers-of-canada-national-conference-2026-build-and-bridge-tickets-1979887177846?aff=oddtdtcreator" style="color: inherit;">
+                    Register Now
+                </a>
+            </button>
             </div>
 
             <div class="about-image-container">
@@ -950,8 +980,6 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Conference</a></li>
                         <li><a href="#why-matters">Why It Matters</a></li>
-                        <li><a href="#speakers">Speakers</a></li>
-                        <li><a href="#schedule">Schedule</a></li>
                         <li><a href="#contact">Registration</a></li>
                     </ul>
                 </div>
@@ -961,10 +989,6 @@
                     <ul>
                         <li><a href="mailto:events@blackengineers.ca">Contact Us</a></li>
                         <li><a href="https://www.blackengineers.ca">Visit Our Website</a></li>
-                        <li><a href="#">Event FAQs</a></li>
-                        <li><a href="#">Venue Details</a></li>
-                        <li><a href="#">Accommodation</a></li>
-                        <li><a href="#">Travel Information</a></li>
                     </ul>
                 </div>
 
