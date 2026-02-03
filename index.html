@@ -36,7 +36,7 @@
             overflow-x: hidden;
         }
 
-        a { text-decoration: none; color: white; transition: 0.3s; }
+        a { text-decoration: none; color: rgb(0, 0, 0); transition: 0.3s; }
         ul { list-style: none; }
         img { max-width: 100%; height: auto; }
 
@@ -68,7 +68,7 @@
             border: 1px solid rgba(255,255,255,0.5);
             border-radius: 6px;
             padding: 6px 10px;
-            color: #fff;
+            color: #000000;
             cursor: pointer;
             font-size: 1rem;
         }
@@ -112,7 +112,10 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: radial-gradient(circle at center, rgba(100, 0, 0, 0.5) 10%, rgba(0, 0, 0, 1) 70%);
+            background: url('Images/hero-bg-img.png'), radial-gradient(circle at center, rgba(100, 0, 0, 0.5) 10%, rgba(0, 0, 0, 1) 70%);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             padding-top: 120px; /* offset for fixed navbar */
             padding-left: 5%;
             padding-right: 5%;
@@ -123,18 +126,21 @@
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 10px;
+            color: black;
         }
 
         .subhead {
-            font-size: 1rem;
+            font-size: 1.5rem;
             letter-spacing: 4px;
             text-transform: uppercase;
-            color: var(--text-gray);
+            color: black;
             margin-bottom: 10px;
+            font-weight: 600;
         }
 
         .date {
             font-size: 1.5rem;
+            color: black;
             font-weight: 700;
             margin-bottom: 30px;
         }
@@ -165,10 +171,10 @@
             display: flex;
             justify-content: center;
             gap: 40px;
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 
-        .social-icons a { color: white; }
+        .social-icons a { color: rgb(0, 0, 0); }
         .social-icons a:hover {
             transform: translateY(-3px);
         }
@@ -805,17 +811,17 @@
 
     <section id="home" class="hero">
         
-        <div class="corner-img top-left-box">
+        <!-- <div class="corner-img top-left-box">
              <img src="./Images/BG-1.png" alt="Red Box Top Left" style="display: block; width: 100%;">
         </div>
 
         <div class="corner-img right-mid-box">
             <img src="./Images/BG-2.png" alt="Red Box Right" style="display: block; width: 100%;">
-        </div>
+        </div> -->
 
         <div class="hero-content reveal-on-scroll">
-            <h1>National Conference</h1>
-            <p class="subhead">Black Engineers Of Canada</p>
+            <h1>BEC Build & Bridge</h1>
+            <p class="subhead">Engineering Black EnterpriseS</p>
             <p class="date">14 August, 2026</p>
             
             <button class="btn-register">
@@ -824,7 +830,7 @@
                 </a>
             </button>
             
-            <div class="social-icons">
+            <!-- <div class="social-icons">
                 <a href="mailto:Events@Blackengineers.ca" aria-label="Email Events at Black Engineers of Canada">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
@@ -834,7 +840,7 @@
                 </a>
                 <a href="https://www.instagram.com/canadaengineers/?hl=en"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.facebook.com/blackengineers.ca"><i class="fa-brands fa-facebook"></i></a>
-            </div>
+            </div> -->
         </div>
     </section>
 
