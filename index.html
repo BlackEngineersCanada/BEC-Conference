@@ -168,6 +168,50 @@
             background: white;
         }
 
+        .btn-sponsor {
+            background: transparent;
+            color: white;
+            padding: 12px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            border: 2px solid white;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-sponsor:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            background: white;
+            color: #000000;
+        }
+
+        .btn-sponsor:focus-visible {
+            outline: 3px solid #f44336;
+            outline-offset: 2px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 600px) {
+            .hero-buttons {
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+
         .social-icons {
             display: flex;
             justify-content: center;
@@ -718,7 +762,8 @@
                 right: -30px;
             }
 
-            .btn-register {
+            .btn-register,
+            .btn-sponsor {
                 width: 100%;
                 max-width: 280px;
             }
@@ -825,11 +870,16 @@
             <p class="subhead">Engineering Black EnterpriseS</p>
             <p class="date">14 August, 2026</p>
             
-            <button class="btn-register">
-                <a href="https://www.eventbrite.ca/e/black-engineers-of-canada-national-conference-2026-build-and-bridge-tickets-1979887177846?aff=oddtdtcreator" style="color: inherit;">
-                    Register Now
+            <div class="hero-buttons">
+                <button class="btn-register">
+                    <a href="https://www.eventbrite.ca/e/black-engineers-of-canada-national-conference-2026-build-and-bridge-tickets-1979887177846?aff=oddtdtcreator" style="color: inherit;">
+                        Register Now
+                    </a>
+                </button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdIB5xLjGk7cNzv7L9zYEcCn0GGHNG-xNR4Kj9_EvB1HVfieQ/viewform" class="btn-sponsor" target="_blank" rel="noopener noreferrer" aria-label="Call for Sponsors - opens Google Form in new tab">
+                    Call for Sponsors
                 </a>
-            </button>
+            </div>
             
             <!-- <div class="social-icons">
                 <a href="mailto:Events@Blackengineers.ca" aria-label="Email Events at Black Engineers of Canada">
